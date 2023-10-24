@@ -35,7 +35,7 @@ def practice1():
 
     print("开始练习乐谱！")
     for note in list:
-        print(f"请输入 '{notes[note]}' 对应的键位，然后按空格结束输入: ", end="")
+        print(f"请输入 '{notes[note]}' : ", end="")
         user_input = ""
         while True:
             event = keyboard.read_event()
