@@ -53,9 +53,10 @@ def practice1():
 
 def practice2():
     print("开始练习乐谱！")
+    print("请输入对应的键位，然后按空格结束输入")
     while True:  # 无限循环来确保练习永远不会结束
         note = random.choice(list(notes.keys()))  # 随机选择一个字母
-        print(f"请输入 '{notes[note]}' 对应的键位，然后按空格结束输入: ", end="")
+        print(f"请输入 '{notes[note]}' : ", end="")
         user_input = ""
         while True:
             event = keyboard.read_event()
